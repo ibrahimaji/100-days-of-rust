@@ -1,0 +1,1 @@
+/home/ibrahim/projects/100-days-of-rust/00-installing_and_hello_world/hello_cargo/target/debug/hello_cargo: /home/ibrahim/projects/100-days-of-rust/00-installing_and_hello_world/hello_cargo/src/main.rs
