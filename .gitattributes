@@ -1,5 +1,5 @@
-Makefile.am -linguist-vendored
-Makefile.in -linguist-vendored
-Makefile -linguist-vendored
-makefile -linguist-vendored
-*.h -linguist-vendored
+00-installing_and_hello_cargo/** linguist-documentation
+01-programming_a_guessing_game/target/** linguist-documentation
+*.lock linguist-vendored
+*.toml linguist-vendored
+*.md linguist-vendored
