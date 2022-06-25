@@ -1,0 +1,5 @@
+Makefile.am linguist-vendored
+Makefile.in linguist-vendored
+Makefile linguist-vendored
+makefile linguist-vendored
+*.h linguist-vendored
