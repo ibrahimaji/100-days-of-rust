@@ -42,3 +42,20 @@ fn main(){
 
 ##Testing the First Part
 use `cargo run`
+
+# Generating Random Number
+1. Using `use rand::Rng;` as a random-number generator.
+2. Using `rand::thread_rng` using a thread as a random-number generator (I don't know what it means).
+3. Using `gen_range` to generate random value (ex.1..100, not including 100).
+
+# Comparing the Guess to the Secret Number
+1. Using `std::cmp::Ordering` from Standard Library to use Ordering, which is another enum and has the variants Less, Greater, and Equal.
+2. A *match* expression is made up of *arms*, which is Less, Greater and Equal.
+3. When running `cargo build` there will be error states, because *guess_number* is String type and *secret_number* is a number.
+4. We shadow the previous value of *guess* with a new one.<br>
+```rust
+guess.trim().parse()
+```
+<br>
+5. *trim* method will eliminate any whitespace at the beginning and end.
+6/ *parse* method will only work on characters that can logically be converted into numbers and so can easily cause errors. So the *parse* method returns a *Result* type and we should add *expect* method.
