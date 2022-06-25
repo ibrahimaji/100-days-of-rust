@@ -1,5 +1,7 @@
-00-installing_and_hello_cargo/** linguist-documentation
-01-programming_a_guessing_game/target/** linguist-documentation
-*.lock linguist-vendored
-*.toml linguist-vendored
-*.md linguist-vendored
+# Auto detect text files and perform normalization
+*          text=auto
+
+*.rs       text diff=rust
+*.toml     text diff=toml
+Cargo.lock text
+
