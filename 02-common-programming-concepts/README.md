@@ -80,7 +80,9 @@ fn main(){
     }
 ```
 <br>
-## Booleans
+
+##Booleans
+
 ```rust
 fn main(){
     let t = true;
