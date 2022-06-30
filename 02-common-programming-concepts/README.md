@@ -40,6 +40,7 @@ let x = 10; //let must be inserted
 
 ## Integer Types
 An integer is a number without a fractional component.
+
 |Length|Size|Signed|Unsigned|
 |---|---|---|---|
 |8-bit|i8|u8|
@@ -48,5 +49,6 @@ An integer is a number without a fractional component.
 |64-bit|i64|u64|
 |128-bit|i128|u128|
 |arch|isize|usize|
+
 Signed integers store both negative and positive values. Unsigned integers can only store positive values.
 
