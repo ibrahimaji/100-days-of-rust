@@ -52,3 +52,83 @@ An integer is a number without a fractional component.
 
 Signed integers store both negative and positive values. Unsigned integers can only store positive values.
 
+Integer Range for unsigned variant is 0 to 255. For example if we use u8 (unsigned 8-bit), we cannot assign 256 as it will be error (overflow value).
+
+## Float Types
+
+Float data type in Rust can be classified as f32 and f64. f32 type is a single-precision float and f64 has double precision.
+The default type is f64 because on modern CPUs it's roughly the same speed as f32 but is capable of more precision. All floating-point types are signed. Floating-point numbers are represented according to the IEEE-754 standard.
+
+## Numeric Operations
+```rust
+fn main(){
+    //addition
+    let sum = 5 + 10;
+
+    //subtraction
+    let difference = 95.5 - 4.3;
+
+    //multiplication
+    let product = 4 * 30;
+
+    //division
+    let quotient = 56.7 / 32.2;
+    let floored = 2 / 3;
+
+    //remainder
+    let remainder = 43 % 5;
+    }
+```
+<br>
+## Booleans
+```rust
+fn main(){
+    let t = true;
+    let f: bool = false; // with explicit type annotation
+    }
+```
+<br>
+
+## The Character Type
+```rust
+fn main(){
+    let c = 'z';
+    let z = 'Z';
+    }
+```
+<br>
+
+# Compound Types
+Compound Types in Rust are tuples and arrays.
+
+## Tuple
+A tuple is a general way of grouping togther a number of values with a variety of types into one compound type. Tuples have a fixed length: once declared, they cannot grow or shrink in size.
+
+```rust
+fn main(){
+    let tup: (i32, f64, u8) = (500, 6.4, 1);
+    }
+```
+<br>
+To get the individual values out of a tuple, we can use pattern matching to destructure a tuple value.
+```rust
+fn main(){
+    let tup = (500, 6.4, 1);
+    let (x, y, z) = tup;
+    println!("The value of y is : {}", y);
+    }
+```
+<br>
+This is called destructuring, because it breaks the single tuple into three parts.
+
+For accessing a tuple element directly by using a period followed by the index of the value we want to access.
+```rust
+fn main(){
+    let x: (i32, f64, u8) = (500, 6.4, 1);
+    let five_hunred = x.0;
+    let six_point_four = x.1;
+    let one = x.2;
+    }
+```
+<br>
+
