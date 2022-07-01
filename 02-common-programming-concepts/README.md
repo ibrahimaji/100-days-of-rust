@@ -133,4 +133,37 @@ fn main(){
     }
 ```
 <br>
+## Array Type
+Every element of an array must have the same type. Arrays in Rust have a fixed length.
+
+```rust
+fn main(){
+    let a = [1,2,3,4,5];
+    }
+```
+<br>
+When we use array?
+1. When you want your data allocated on the stack rather than the heap.
+2. When you want to ensure you always have a fixed number of elements.
+3. Compare the vector type, array doesn't allowed to grow or shrink in size.
+For string :
+```rust
+    let months = ["January","February"];
+```
+For number :
+```rust
+let a: [i32; 5] = [1, 2, 3, 4, 5];
+let b = [3; 5]; // same with let b = [3, 3, 3, 3, 3]
+```
+## Accessing array elements
+```rust
+fn main(){
+    let a = [1, 2, 3, 4, 5];
+    let first = a[0];
+    let second = a[1];
+    }
+```
+
+## Invalid array element access
+The error will occur when we want accessing an element of an array past the end of the array.
 
