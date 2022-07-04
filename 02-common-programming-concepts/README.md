@@ -167,3 +167,16 @@ fn main(){
 ## Invalid array element access
 The error will occur when we want accessing an element of an array past the end of the array.
 
+# Functions
+Rust code uses *snake case* as the conventional style for function and variable names, in which all letters are lowercase and underscores separate words.
+
+## Parameters
+Parameters are special variables that are part of a function's signature.
+In function signatures, you *must* declare the type of each parameter.
+
+## Statements and Expressions
+1. Function bodies are made up of a series of statements optionally ending in an expression.
+2. Rust is an expression-based language.
+3. Statements are instructions that perform some action and do not return a value.
+4. Expressions evaluate to a resulting value.
+5. Expressions do not include ending semicolongs. If you add a semicolon to the end of an expression, yout turn it into statement, and it will then not return a value.
